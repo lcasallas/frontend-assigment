@@ -1,7 +1,9 @@
 # DocRed Frontend test
+
 Este es un simple test para determinar tus conocimientos y habilidades de Frontend.
 
 ## Como empezamos?
+
 Haz un fork de este repositorio para trabajar en él.
 Una vez completada la tarea, envíanos la URL de tu repositorio a nuestro email.
 
@@ -23,14 +25,40 @@ El contenido del artículo debe ser cargado desde el archivo `mockup/article.jso
 
 Se debe agregar al final de este README las instrucciones sobre cómo correr el proyecto.
 
-Tecnologías que debes usar
-----
+## Tecnologías que debes usar
+
 - ReactJS (Con Hooks preferentemente)
 - SASS (o styled-components preferentemente)
 
-Puntos extras:
-----
+## Puntos extras:
+
 - NextJS y Typescript.
 - Unit testing.
 - Linting y Prettier
 - Docker
+
+## Solución
+
+Para dar solución a este proyecto se utilizo:
+
+- React
+- NextJS
+- Styled Components
+- Json-server
+- Feather Icons
+- Semistandard
+
+Clonar el proyecto en la siguiente direccion:
+`https://github.com/lcasallas/frontend-assigment`
+
+### Instalación y ejecución
+
+-Instalacion:
+`npm install`
+
+-Ejecucion front:
+`npm run dev`
+Luego ingresar en el navegador http://localhost:3000
+
+-Ejecucion Back:
+`npm run server`
