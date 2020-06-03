@@ -1,4 +1,5 @@
 import React from 'react';
+import useInputValue from '../hooks/useInputValue';
 import styled from 'styled-components';
 
 import Logo from './Logo';
@@ -50,6 +51,8 @@ const Header = ({ children }) => {
 		window.alert('buscando...');
 	};
 
+	const inputSearch = useInputValue();
+
 	return (
 		<Navbar>
       <div className='item'>
@@ -57,7 +60,7 @@ const Header = ({ children }) => {
       </div>
 			<div className='info_container'>
 				<div className='item'>
-					<SearchBar onSubmit={handleSubmit} />
+					<SearchBar onSubmit={handleSubmit} {...inputSearch} />
 				</div>
 				<div>
 					<Menu text='Inicio' icon='home' />

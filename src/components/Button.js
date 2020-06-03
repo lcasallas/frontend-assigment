@@ -10,6 +10,11 @@ const ButtonBase = styled.button`
   box-sizing: border-box;
   padding: 5px 20px;
   font-size: 12px;
+  cursor: pointer;
+
+  :focus{
+    outline: none;
+  }
 `;
 
 const Button = ({ text, onClick }) => {

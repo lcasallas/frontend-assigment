@@ -10,6 +10,11 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   color: #797979;
+  cursor: pointer;
+
+  :focus{
+    outline: none;
+  }
 `;
 
 const Text = styled.span`

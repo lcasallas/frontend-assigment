@@ -1,23 +1,42 @@
 import React from 'react';
+import styled from 'styled-components';
+import API from '../src/util/API';
 
 import Layout from '../src/components/Layout';
 import RelatedNews from '../src/containers/RelatedNews';
-import Button from '../src/components/Button';
-import Label from '../src/components/Label';
-import TitleSection from '../src/components/TitleSection';
+import NewsItem from '../src/containers/NewItem';
 
-const Article = () => {
+const ArticleContainer = styled.div`
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: 30px;
+`;
+
+const Article = ({article}) => {
+	console.log('DATA Article', article);
 	return (
 		<Layout>
-			<h1>Contenido</h1>
-			<RelatedNews />
-			<Button text='Guardar' />
-			<Label text='Medicina Interna' />
-			<Label text='Pediatria' />
-			<Label text='Obstetricia' />
-			<TitleSection text='Noticias destacadas' />
+			<ArticleContainer>
+				<div>
+					<NewsItem data={article[0]}/>
+				</div>
+				<div>
+					<RelatedNews />
+				</div>
+			</ArticleContainer>
 		</Layout>
 	);
 };
+
+export async function getStaticProps(context) {
+
+	const article = await API.getArticles();
+
+  return {
+    props: {
+			article,
+		}, // will be passed to the page component as props
+  }
+}
 
 export default Article;
