@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from '../src/components/Header';
-import Footer from '../src/components/Footer';
+
+import Layout from '../src/components/Layout';
 
 const Article = () => {
 	return (
-		<div>
-			<Header />
-			<Footer />
-		</div>
+		<Layout>
+			<h1>Contenido</h1>
+		</Layout>
 	);
 };
 

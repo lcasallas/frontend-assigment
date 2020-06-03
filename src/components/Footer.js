@@ -12,10 +12,12 @@ const FooterContainer = styled.div`
   align-items: center;
   padding: 0px 30px;
   background-color: #1a80c7;
+  font-size: 14px;
 
   & .item {
     color: white;
     text-decoration: none;
+    opacity: 0.8
   }
 
   & .info {

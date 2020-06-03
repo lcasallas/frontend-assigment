@@ -17,6 +17,7 @@ const Navbar = styled.div`
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
 	box-shadow: 3px 0px 8px #333;
+  z-index: 9999;
 
 	& .info_container {
 		display: flex;
