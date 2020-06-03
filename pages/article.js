@@ -7,9 +7,9 @@ import RelatedNews from '../src/containers/RelatedNews';
 import NewsItem from '../src/containers/NewItem';
 
 const ArticleContainer = styled.div`
-	display: grid;
-	grid-template-columns: 1fr auto;
-	grid-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 30px;
 `;
 
 const Article = ({ article }) => {

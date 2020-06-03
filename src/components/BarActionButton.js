@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import ButtonIconInfo from '../components/ButtonIconInfo';
-import ButtonIcon from './ButtonIcon';
 
 const BarContainer = styled.div`
   width: 100%;

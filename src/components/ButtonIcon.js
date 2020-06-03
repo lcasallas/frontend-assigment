@@ -5,9 +5,9 @@ import Badge from './Badge';
 import FeatherIcon from 'feather-icons-react';
 
 const Button = styled.button`
-	position: relative;
-	background: none;
-	border: none;
+  position: relative;
+  background: none;
+  border: none;
 `;
 
 const ButtonIcon = ({ icon, color, size, onClick, badge }) => {
