@@ -10,7 +10,7 @@ const LabelContainer = styled.span`
   font-size: 12px;
 `;
 
-const Label = ({text}) => {
+const Label = ({ text }) => {
   return (
     <LabelContainer>{text}</LabelContainer>
   );

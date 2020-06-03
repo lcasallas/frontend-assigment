@@ -23,6 +23,6 @@ const Button = ({ text, onClick }) => {
       {text}
     </ButtonBase>
   );
-}
+};
 
 export default Button;

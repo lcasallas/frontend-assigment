@@ -16,11 +16,11 @@ const AvatarContainer = styled.div`
 `;
 
 const Avatar = ({ srcAvatar }) => {
-	return (
-		<AvatarContainer>
-			<img className='avatar' src={srcAvatar} alt='User Avatar' />
-		</AvatarContainer>
-	);
+  return (
+    <AvatarContainer>
+      <img className='avatar' src={srcAvatar} alt='User Avatar' />
+    </AvatarContainer>
+  );
 };
 
 export default Avatar;

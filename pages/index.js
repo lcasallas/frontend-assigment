@@ -7,15 +7,15 @@ const Container = styled.div`
 `;
 
 const Home = () => {
-	return (
-		<Container>
-			<h1>Test Frontend Developer</h1>
+  return (
+    <Container>
+      <h1>Test Frontend Developer</h1>
       <p>Leonardo Casallas</p>
-			<Link href='/article'>
-				<a>Ver resultado</a>
-			</Link>
-		</Container>
-	);
+      <Link href='/article'>
+        <a>Ver resultado</a>
+      </Link>
+    </Container>
+  );
 };
 
 export default Home;

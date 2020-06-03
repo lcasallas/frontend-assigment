@@ -11,12 +11,12 @@ const Button = styled.button`
 `;
 
 const ButtonIcon = ({ icon, color, size, onClick, badge }) => {
-	return (
-		<Button onClick={onClick}>
-			{badge && <Badge value={badge} />}
-			<FeatherIcon icon={icon} color={color} size={size} />
-		</Button>
-	);
+  return (
+    <Button onClick={onClick}>
+      {badge && <Badge value={badge} />}
+      <FeatherIcon icon={icon} color={color} size={size} />
+    </Button>
+  );
 };
 
 export default ButtonIcon;

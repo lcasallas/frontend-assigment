@@ -17,6 +17,7 @@ const NewsContainer = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   & .article-detail {
     padding: 30px 20px 0px;
@@ -54,8 +55,7 @@ const NewsContainer = styled.div`
   }
 `;
 
-const NewsItem = ({data}) => {
-
+const NewsItem = ({ data }) => {
   return (
     <NewsContainer>
       <div className='image-section'>

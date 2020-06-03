@@ -43,11 +43,11 @@ const InfoData = styled.div`
   }
 `;
 
-const InfoArticle = ({hora, fecha, min}) => {
+const InfoArticle = ({ hora, fecha, min }) => {
   return (
     <InfoContainer>
       <div>
-        <img src={logo} alt='simbolo docred'/>
+        <img src={logo} alt='simbolo docred' />
       </div>
       <div className='info'>
         <p className='info__title'>Noticias DocRed</p>

@@ -26,11 +26,11 @@ const CardIndicator = styled.span`
   text-transform: uppercase;
 `;
 
-const ImageArticle = ({src}) => {
+const ImageArticle = ({ src }) => {
   return (
     <ImageContainer>
       <CardIndicator>noticia</CardIndicator>
-      <img src={src} alt='imagen articulo'/>
+      <img src={src} alt='imagen articulo' />
     </ImageContainer>
   );
 };

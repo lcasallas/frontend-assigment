@@ -18,14 +18,14 @@ const TextInfo = styled.p`
 `;
 
 const Menu = ({ children, text, icon }) => {
-	return (
-		<Button type='button'>
-			{icon && <FeatherIcon icon={icon} color='#fff' />}
-			{children}
-			{text && <TextInfo>{text}</TextInfo>}
-			<FeatherIcon icon='chevron-down' color='#fff' size='16' />
-		</Button>
-	);
+  return (
+    <Button type='button'>
+      {icon && <FeatherIcon icon={icon} color='#fff' />}
+      {children}
+      {text && <TextInfo>{text}</TextInfo>}
+      <FeatherIcon icon='chevron-down' color='#fff' size='16' />
+    </Button>
+  );
 };
 
 export default Menu;

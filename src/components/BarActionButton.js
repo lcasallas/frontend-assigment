@@ -16,7 +16,7 @@ const BarContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const BarActionButton = ({destacarAction, comentarAction, compartirAction}) => {
+const BarActionButton = ({ destacarAction, comentarAction, compartirAction }) => {
   return (
     <BarContainer>
       <ButtonIconInfo icon='star' color='#B8D6EC' text='Destacar' size='20' onClick={destacarAction} />
@@ -24,6 +24,6 @@ const BarActionButton = ({destacarAction, comentarAction, compartirAction}) => {
       <ButtonIconInfo icon='arrow-up-right' color='#BDBCBC' text='Compartir' size='20' onClick={compartirAction} />
     </BarContainer>
   );
-}
+};
 
 export default BarActionButton;

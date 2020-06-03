@@ -46,41 +46,41 @@ const Navbar = styled.div`
 `;
 
 const Header = ({ children }) => {
-	const handleSubmit = (event) => {
-		event.preventDefault();
-		window.alert('buscando...');
-	};
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    window.alert('buscando...');
+  };
 
-	const inputSearch = useInputValue();
+  const inputSearch = useInputValue();
 
-	return (
-		<Navbar>
+  return (
+    <Navbar>
       <div className='item'>
         <Logo />
       </div>
-			<div className='info_container'>
-				<div className='item'>
-					<SearchBar onSubmit={handleSubmit} {...inputSearch} />
-				</div>
-				<div>
-					<Menu text='Inicio' icon='home' />
-				</div>
-			</div>
-			<div className='action-container'>
-				<div className='action-item'>
-					<ButtonIcon icon='bell' color='white' badge='104' />
-				</div>
-				<div className='action-item'>
-					<Menu>
-						<Avatar srcAvatar='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb' />
-					</Menu>
-				</div>
-				<div className='action-item'>
-					<ButtonIcon icon='settings' color='white' />
-				</div>
-			</div>
-		</Navbar>
-	);
+      <div className='info_container'>
+        <div className='item'>
+          <SearchBar onSubmit={handleSubmit} {...inputSearch} />
+        </div>
+        <div>
+          <Menu text='Inicio' icon='home' />
+        </div>
+      </div>
+      <div className='action-container'>
+        <div className='action-item'>
+          <ButtonIcon icon='bell' color='white' badge='104' />
+        </div>
+        <div className='action-item'>
+          <Menu>
+            <Avatar srcAvatar='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb' />
+          </Menu>
+        </div>
+        <div className='action-item'>
+          <ButtonIcon icon='settings' color='white' />
+        </div>
+      </div>
+    </Navbar>
+  );
 };
 
 export default Header;

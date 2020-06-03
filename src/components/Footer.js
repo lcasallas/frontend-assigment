@@ -35,7 +35,7 @@ const Footer = () => {
       <Link href='/'><a className='item'>Preguntas frecuentes</a></Link>
       <Link href='/'><a className='item'>Cont&aacute;ctanos</a></Link>
       <Link href='/'><a className='item'>Informaci&oacute;n</a></Link>
-      <div className='info' ><span>DocRed @ 2019. Todos los derechos reservados</span></div>
+      <div className='info'><span>DocRed @ 2019. Todos los derechos reservados</span></div>
     </FooterContainer>
   );
 };

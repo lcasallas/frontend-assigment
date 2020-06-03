@@ -71,7 +71,7 @@ const BarButton = styled.div`
   padding: 4px 0px;
 `;
 
-const Card = ({imageUrl, indicator, title, description, favorites, comments, views}) => {
+const Card = ({ imageUrl, indicator, title, description, favorites, comments, views }) => {
   return (
     <CardContainer>
       <CardImage>

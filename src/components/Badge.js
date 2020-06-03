@@ -15,7 +15,7 @@ const Span = styled.span`
 `;
 
 const Badge = ({ value }) => {
-	return <Span>{value}</Span>;
+  return <Span>{value}</Span>;
 };
 
 export default Badge;

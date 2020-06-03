@@ -21,13 +21,13 @@ const TitleContainer = styled.div`
   }
 `;
 
-const TitleSection = ({text}) => {
+const TitleSection = ({ text }) => {
   return (
     <TitleContainer>
       <span>{text}</span>
       <hr />
     </TitleContainer>
-  )
-}
+  );
+};
 
 export default TitleSection;

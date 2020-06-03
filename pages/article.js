@@ -12,30 +12,29 @@ const ArticleContainer = styled.div`
 	grid-gap: 30px;
 `;
 
-const Article = ({article}) => {
-	return (
-		<Layout>
-			<ArticleContainer>
-				<div>
-					<NewsItem data={article[0]}/>
-				</div>
-				<div>
-					<RelatedNews />
-				</div>
-			</ArticleContainer>
-		</Layout>
-	);
+const Article = ({ article }) => {
+  return (
+    <Layout>
+      <ArticleContainer>
+        <div>
+          <NewsItem data={article[0]} />
+        </div>
+        <div>
+          <RelatedNews />
+        </div>
+      </ArticleContainer>
+    </Layout>
+  );
 };
 
-export async function getStaticProps(context) {
-
-	const article = await API.getArticles();
+export async function getStaticProps (context) {
+  const article = await API.getArticles();
 
   return {
     props: {
-			article,
-		}, // will be passed to the page component as props
-  }
+      article
+    } // will be passed to the page component as props
+  };
 }
 
 export default Article;

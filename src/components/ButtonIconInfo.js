@@ -22,8 +22,7 @@ const Text = styled.span`
   font-size: 12px;
 `;
 
-
-const ButtonIconInfo = ({icon, color, size, text, onClick}) => {
+const ButtonIconInfo = ({ icon, color, size, text, onClick }) => {
   return (
     <Button onClick={onClick}>
       <FeatherIcon icon={icon} color={color} size={size} />

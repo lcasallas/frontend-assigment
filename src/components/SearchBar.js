@@ -25,18 +25,18 @@ const Input = styled.input`
 `;
 
 const SearchBar = ({ value, onChange, onSubmit }) => {
-	return (
-		<Form onSubmit={onSubmit}>
-			<ButtonSearch type='submit'>
-				<FeatherIcon icon='search' color='#65b32e' />
-			</ButtonSearch>
-			<Input
-				placeholder='¿Qué estás buscando?'
-				value={value}
-				onChange={onChange}
-			/>
-		</Form>
-	);
+  return (
+    <Form onSubmit={onSubmit}>
+      <ButtonSearch type='submit'>
+        <FeatherIcon icon='search' color='#65b32e' />
+      </ButtonSearch>
+      <Input
+        placeholder='¿Qué estás buscando?'
+        value={value}
+        onChange={onChange}
+      />
+    </Form>
+  );
 };
 
 export default SearchBar;

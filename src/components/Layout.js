@@ -17,7 +17,7 @@ const Main = styled.div`
   padding: 40px 25px 30px;
 `;
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <ContainerLayout>
       <Head>
