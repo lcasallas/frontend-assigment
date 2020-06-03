@@ -13,7 +13,6 @@ const ArticleContainer = styled.div`
 `;
 
 const Article = ({article}) => {
-	console.log('DATA Article', article);
 	return (
 		<Layout>
 			<ArticleContainer>
